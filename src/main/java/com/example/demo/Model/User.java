@@ -13,13 +13,13 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String firstName;
-    private String lastName;
+    private String last_Name;
 
     public User(){}
 
     public User(String firstName, String lastName) {
         this.firstName = firstName;
-        this.lastName = lastName;
+        this.last_Name = lastName;
     }
 
     public String getFirstName() {
@@ -31,10 +31,10 @@ public class User {
     }
 
     public String getLastName() {
-        return lastName;
+        return last_Name;
     }
 
     public void setLastName(String lastName) {
-        this.lastName = lastName;
+        this.last_Name = lastName;
     }
 }
