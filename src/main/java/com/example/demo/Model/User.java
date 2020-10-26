@@ -13,12 +13,14 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String firstName;
+
     private String last_Name;
 
     public User(){}
 
     public User(String firstName, String lastName) {
         this.firstName = firstName;
+
         this.last_Name = lastName;
     }
 
@@ -26,6 +28,9 @@ public class User {
         return firstName;
     }
 
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
 
     public String getLastName() {
         return last_Name;
